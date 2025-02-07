@@ -107,7 +107,7 @@ function printFields(){
     const container = document.getElementById("content")
     container.innerHTML = `<img class="loader" src="/files/loading.gif">
     <h1>Loading result</h1>`;
-    funcButt.onclick = "";
+    funcButt.onclick = "window.location.reload();";
     funcButt.innerText = "Please wait";
     loadHandler(suggestionString, container);
   }
