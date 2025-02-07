@@ -1,6 +1,7 @@
 async function main(input) {
   const url = "https://openai-embedding-worker.vvovsen.workers.dev/";
   const body = { input: input };
+  
   try {
     const response = await fetch(url, {
       method: 'POST',
