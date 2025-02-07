@@ -106,7 +106,7 @@ function printFields(){
   if(!emptyFound){
     const suggestionString = `Favourite: ${favMov.value}\n Mood: ${newClass.value}\n Serious: ${funSer.value}`;
     const container = document.getElementById("content")
-    container.innerHTML = `<img class="loader" src="files/loading.gif">
+    container.innerHTML = `<img class="loader" src="https://github.com/RasmusLange/PopChoice_self_study/blob/main/files/loading.gif?raw=true">
     <h1>Loading result</h1>`;
     funcButt.onclick = "";
     funcButt.innerText = "Please wait";
