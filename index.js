@@ -105,9 +105,9 @@ function printFields(){
   if(!emptyFound){
     const suggestionString = `Favourite: ${favMov.value}\n Mood: ${newClass.value}\n Serious: ${funSer.value}`;
     const container = document.getElementById("content")
-    container.innerHTML = `<img class="loader" src="/files/loading.gif">
+    container.innerHTML = `<img class="loader" src="files/loading.gif">
     <h1>Loading result</h1>`;
-    funcButt.onclick = "window.location.reload();";
+    funcButt.onclick = "location.reload()";
     funcButt.innerText = "Please wait";
     loadHandler(suggestionString, container);
   }
