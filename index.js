@@ -67,7 +67,6 @@ async function sendMessage(input){
       body: JSON.stringify(fetchBody)
   })
   const data = await response.json()
-  console.log(data)
   return data;
 }
 
