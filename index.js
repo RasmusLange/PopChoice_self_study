@@ -72,7 +72,7 @@ async function sendMessage(input){
 
 async function loadHandler(input, element){
     const testResponse = await sendMessage(input);
-    element.innerHTML = `<textarea id="resultOutput" class="inputField">${testResponse.content}</textarea>`
+    element.innerHTML = `<textarea onclick="location.reload()" id="resultOutput" class="inputField">${testResponse.content}</textarea>`
     funcButt.innerText = "Try again!"
 }
 
@@ -107,7 +107,7 @@ function printFields(){
     const container = document.getElementById("content")
     container.innerHTML = `<img class="loader" src="files/loading.gif">
     <h1>Loading result</h1>`;
-    funcButt.onclick = "location.reload()";
+    funcButt.onclick = "";
     funcButt.innerText = "Please wait";
     loadHandler(suggestionString, container);
   }
