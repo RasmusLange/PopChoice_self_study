@@ -1,3 +1,9 @@
+document.querySelectorAll('input, textarea').forEach((el) => {
+  el.addEventListener('focus', () => {
+      window.scrollTo(0, 0);
+  });
+});
+
 async function main(input) {
   const url = "https://openai-embedding-worker.vvovsen.workers.dev/";
   const body = { input: input };
