@@ -32,6 +32,7 @@ h1 {
     text-align: center;
     flex: 1; /* Make the .item proportionally take space */
     justify-content: space-evenly; /* Distribute content inside the .item */
+    height: 10vh;
     width: 100%; /* Ensure it spans the full width of the container */
     padding-bottom: 2vh;
 }
@@ -43,14 +44,14 @@ h1 {
 }
 
 #icon {
-    width: 25%; /* Scale icon based on viewport width */
-    height: auto;
+    width: auto; /* Scale icon based on viewport width */
+    height: 20vh;
     margin-bottom: 1 vh; /* Use viewport-relative spacing */
 }
 
 #title {
-    width: 55%; /* Scale title based on viewport width */
-    height: auto;
+    width: auto; /* Scale title based on viewport width */
+    height: 20vh;
     margin-bottom: 1vh;
 }
 
