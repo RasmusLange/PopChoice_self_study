@@ -1,10 +1,6 @@
 let savedScrollPosition = 0;
 
 document.querySelectorAll('input, textarea').forEach((el) => {
-    el.addEventListener('focus', () => {
-        savedScrollPosition = window.scrollY; // Save current scroll position
-    });
-
     el.addEventListener('blur', () => {
         setTimeout(() => {
             window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
