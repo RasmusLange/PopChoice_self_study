@@ -2,10 +2,10 @@ let savedScrollPosition = 0;
 
 document.querySelectorAll('input, textarea').forEach((el) => {
     el.addEventListener('blur', () => {
-        setTimeout(() => {
-            window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
-        }, 100);
-    });
+        if (!document.activeElement || (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA')) {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+        }
+    }, 100);
 });
 
 async function main(input) {
