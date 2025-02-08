@@ -82,7 +82,7 @@ async function sendMessage(input){
 
 async function loadHandler(input, element){
     const testResponse = await sendMessage(input);
-    element.innerHTML = `<textarea id="resultOutput" class="inputField">${testResponse.content}</textarea>`
+    element.innerHTML = `<div id="resultOutput"><p class="inputField">${testResponse.content}</p></div>`
     funcButt.innerText = "Try again!"
     funcButt.onclick = () => location.reload();
 }
