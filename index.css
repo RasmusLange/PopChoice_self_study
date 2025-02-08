@@ -66,6 +66,14 @@ h1 {
     height: 50vh;
     font-size: 0.85rem;
     color: white;
+    width: 80%; /* Responsive width */
+    height: 11vh; /* Adjust for more lines */
+    padding: 0.75vh; /* Responsive padding */
+    font-size: 3vh; /* Responsive font size */
+    background-color: #3B4877;
+    color: #05060C;
+    border: none;
+    resize: none; 
 }
 
 textarea.inputField {
