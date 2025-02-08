@@ -51,6 +51,7 @@ h1 {
 
 #title {
     width: auto; /* Scale title based on viewport width */
+    max-width: 100%
     height: 20vh;
     margin-bottom: 1vh;
 }
